@@ -1,0 +1,80 @@
+.process-card {
+    width: 291px;
+    height: 166px;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+    // background: #FFFFFF;
+    // border: 1px solid rgba(0, 0, 0, 0.1);
+    // box-shadow: 3.80976px 0.952441px 15px rgba(154, 160, 170, 0.15);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background: url("../../assets/img/card-bg.svg");
+    }
+
+    h3 {
+        color: #323232;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0 0 30px;
+    }
+
+    span {
+        display: block;
+        max-width: 210px;
+        color: #666666;
+        font-size: 12px;
+    }
+
+    &__menu {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        width: 261px;
+        background: #061839;
+        border-radius: 4px;
+        transition: right 0.5s;
+
+        &.open {
+            right: 0;
+        }
+    }
+
+    &__btn,
+    &__icon {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        width: 60px;
+        height: 56px;
+    }
+
+    &__btn {
+        opacity: 0;
+    }
+
+    &__icon {
+        background: #B8D3EC;
+        border-top-right-radius: 5px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            display: block;
+            max-width: 16px;
+            max-height: 30px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #061839;
+
+    &__logo {
+        display: block;
+        margin: 0 auto;
+    }
+}
